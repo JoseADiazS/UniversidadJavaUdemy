@@ -9,8 +9,11 @@ public class ScannerTest {
         // write your code here
        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el nombre de Usuario");
-        var usuario = scanner.nextLine();
-        System.out.println("Usuario = "+usuario);
+        System.out.println("Proporciona el titulo: ");
+        var titulo = scanner.nextLine();
+        System.out.println("Proporciona el autor: ");
+        var autor = scanner.nextLine();
+        System.out.println(titulo + " fue escrito por" + autor);
     }
+
 }
