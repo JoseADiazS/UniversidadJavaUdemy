@@ -44,9 +44,9 @@ public class Pelicula {
      * Sobrescritura del metodo toString para la clase Pelicula
      * @return Mensaje: La pelicula es: + Nombre de la pelicula
      */
-    @Override
+/*    @Override
     public String toString() {
         return "La pelicula es: " + this.getNombre();
 
-    }
+    }*/
 }

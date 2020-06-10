@@ -39,8 +39,8 @@ public class AccesoDatosImpl implements AccesoDatos {
     public void escribir(Pelicula pelicula, String nombreArchivo, Boolean anexar) throws EscrituraDatosEx{
         File archivo = new File(nombreArchivo);
         try {
-            PrintWriter pw = new PrintWriter(new FileWriter(archivo));
-            pw.println(pelicula.getNombre() + "\n");
+            PrintWriter pw = new PrintWriter(new FileWriter(archivo,anexar));
+            pw.println(pelicula.getNombre());
             pw.close();
         } catch (IOException e) {
             e.printStackTrace();
